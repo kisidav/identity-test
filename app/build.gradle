@@ -29,18 +29,16 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:design:27.1.1'
 
-    implementation 'com.android.volley:volley:1.1.1'
-    implementation group: 'com.android.support', name: 'recyclerview-v7', version: '27.1.1'
 
-    implementation('Identity.SDK.Android.Release.CI:identity:3.0.0') {
+    implementation('de.identity:identity:3.0.7') {
         transitive = true
     }
 
-    implementation('Identity.SDK.Android.Release.CI:networktest:3.0.0') {
+    implementation('de.identity:networktest:3.0.7') {
         transitive = true
     }
 
-    implementation('Identity.SDK.Android.Release.CI:ocr:3.0.0') {
+    implementation('de.identity:ocr:3.0.7') {
         transitive = true
     }
 }
