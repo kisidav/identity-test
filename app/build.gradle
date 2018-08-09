@@ -35,6 +35,17 @@ dependencies {
     implementation('com.microblink:blinkid:3.17.0')
     implementation 'io.fotoapparat.fotoapparat:library:2.2.0'
 
+    compile 'com.google.code.gson:gson:' + rootProject.deps.gsonVersion
+    compile 'com.squareup.okhttp3:okhttp:' + rootProject.deps.okHttpVersion
+    compile 'com.squareup.okhttp3:logging-interceptor:' + rootProject.deps.okHttpVersion
+    compile 'com.squareup.retrofit2:retrofit:' + rootProject.deps.retrofitVersion
+    compile 'com.squareup.retrofit2:converter-gson:' + rootProject.deps.retrofitVersion
+    compile 'com.squareup.retrofit2:adapter-rxjava2:' + rootProject.deps.retrofitVersion
+    compile 'io.reactivex.rxjava2:rxjava:' + rootProject.deps.rxJavaVersion
+    compile 'io.reactivex.rxjava2:rxandroid:' + rootProject.deps.rxAndroidVersion
+    compile 'com.google.android.gms:play-services-vision:15.0.2'
+    compile 'com.jakewharton:butterknife:' + rootProject.deps.butterknife
+
     implementation(group: 'de.identity', name: 'identity', version: '3.0.8', ext: 'aar')
     implementation(group: 'de.identity', name: 'networktest', version: '3.0.8', ext: 'aar')
     implementation(group: 'de.identity', name: 'ocr', version: '3.0.8', ext: 'aar')

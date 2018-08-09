@@ -14,6 +14,21 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+ext {
+    deps = [
+            supportLibraryVersion: '27.1.1',
+            volley               : '1.1.1',
+            pusher               : '1.5.0',
+            opentok              : '2.12.0',
+            rxJavaVersion        : '2.1.0',
+            rxAndroidVersion     : '2.0.1',
+            rxBindingVersion     : '2.0.0',
+            retrofitVersion      : '2.2.0',
+            okHttpVersion        : '3.7.0',
+            gsonVersion          : '2.8.0',
+            butterknife          : '8.4.0',
+    ]
+}
 
 allprojects {
     repositories {
