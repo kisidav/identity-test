@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> IdentityVideoSDK.getInstance().startIdentification(this, 1234, ""));
+        fab.setOnClickListener(view -> IdentityVideoSDK.getInstance().startIdentification(this, 1234, "zq_sGxyYcg4XvJSjak4x"));
 
     }
 
