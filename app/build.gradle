@@ -45,6 +45,7 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxandroid:' + rootProject.deps.rxAndroidVersion
     compile 'com.google.android.gms:play-services-vision:15.0.2'
     compile 'com.jakewharton:butterknife:' + rootProject.deps.butterknife
+    compile "com.pusher:pusher-java-client:${rootProject.deps.pusher}"
 
     implementation(group: 'de.identity', name: 'identity', version: '3.0.8', ext: 'aar')
     implementation(group: 'de.identity', name: 'networktest', version: '3.0.8', ext: 'aar')
