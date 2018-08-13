@@ -25,29 +25,20 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:design:27.1.1'
 
-    implementation 'com.android.volley:volley:1.1.1'
-    implementation 'com.opentok.android:opentok-android-sdk:2.12.0'
-    implementation('com.microblink:blinkid:3.17.0')
-    implementation 'io.fotoapparat.fotoapparat:library:2.2.0'
 
-    compile 'com.google.code.gson:gson:' + rootProject.deps.gsonVersion
-    compile 'com.squareup.okhttp3:okhttp:' + rootProject.deps.okHttpVersion
-    compile 'com.squareup.okhttp3:logging-interceptor:' + rootProject.deps.okHttpVersion
-    compile 'com.squareup.retrofit2:retrofit:' + rootProject.deps.retrofitVersion
-    compile 'com.squareup.retrofit2:converter-gson:' + rootProject.deps.retrofitVersion
-    compile 'com.squareup.retrofit2:adapter-rxjava2:' + rootProject.deps.retrofitVersion
-    compile 'io.reactivex.rxjava2:rxjava:' + rootProject.deps.rxJavaVersion
-    compile 'io.reactivex.rxjava2:rxandroid:' + rootProject.deps.rxAndroidVersion
-    compile 'com.google.android.gms:play-services-vision:15.0.2'
-    compile 'com.jakewharton:butterknife:' + rootProject.deps.butterknife
-    compile "com.pusher:pusher-java-client:${rootProject.deps.pusher}"
+    implementation('de.identity:networktest:3.0.8') {
+        transitive = true
+    }
+    implementation('de.identity:identity:3.0.8') {
+        transitive = true
+    }
+    implementation('de.identity:ocr:3.0.8') {
+        transitive = true
+        exclude module: "support-v13"
+    }
 
-    implementation(group: 'de.identity', name: 'identity', version: '3.0.8', ext: 'aar')
-    implementation(group: 'de.identity', name: 'networktest', version: '3.0.8', ext: 'aar')
-    implementation(group: 'de.identity', name: 'ocr', version: '3.0.8', ext: 'aar')
 }
