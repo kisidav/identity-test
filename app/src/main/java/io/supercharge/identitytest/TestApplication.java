@@ -11,6 +11,6 @@ public class TestApplication extends Application {
         super.onCreate();
 
         IdentityVideoSDK.initialize(this);
-        IdentityVideoSDK.setMode(IdentityVideoSDK.Mode.TEST);
+        IdentityVideoSDK.setMode(IdentityVideoSDK.Mode.STAGING);
     }
 }

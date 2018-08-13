@@ -30,15 +30,15 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
 
 
-    implementation('de.identity:identity:3.0.7') {
+    implementation('de.identity:networktest:3.0.8') {
         transitive = true
+    }
+    implementation('de.identity:identity:3.0.8') {
+        transitive = true
+    }
+    implementation('de.identity:ocr:3.0.8') {
+        transitive = true
+        exclude module: "support-v13"
     }
 
-    implementation('de.identity:networktest:3.0.7') {
-        transitive = true
-    }
-
-    implementation('de.identity:ocr:3.0.7') {
-        transitive = true
-    }
 }
