@@ -18,9 +18,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url 'http://maven.microblink.com' }
-        maven { url "http://tokbox.bintray.com/maven" }
-        maven { url 'https://jitpack.io' }
         maven {
             url "https://identity.jfrog.io/identity/identity-sdk-release-local"
             credentials {
